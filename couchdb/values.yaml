@@ -1,0 +1,23 @@
+
+couchdb:
+
+  couchdbConfig:
+    couchdb:
+      uuid: a01672a6-458b-482f-b923-47c77d40a8a3
+
+  # 20 character random string
+  erlangFlags:
+    setcookie: c26m5ybPCxhvo9F0GDcB
+
+  ingress:
+    enabled: true
+    hosts:
+      - couchdb-dev.ajpippin.us
+    path: /
+    annotations:
+    - kubernetes.io/ingress.class: traefik
+    tls:
+      # Secrets must be manually created in the namespace.
+      # - secretName: ajpippinus-wildcard-tls
+      #   hosts:
+      #     - couchdb-dev.ajpippin.us

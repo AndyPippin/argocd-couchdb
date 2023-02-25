@@ -1,0 +1,9 @@
+dependencies:
+- name: couchdb
+  repository: https://apache.github.io/couchdb-helm
+  version: 4.1.0
+- name: prometheus-couchdb-exporter
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 0.2.1
+digest: sha256:6b967a57bad6f5353e5c873c94fc89d318c844e2a94248ceaea3ba32a59347d8
+generated: "2023-02-25T10:16:26.35244-08:00"
